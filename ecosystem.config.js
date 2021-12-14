@@ -34,7 +34,7 @@ module.exports = {
       host : ['tr1n1'],
       ref  : 'origin/master',
       repo : 'git@github.com:bixcoita/mumble.git',
-      path : '/home/pi/mumble',
+      path : '/home/pi/Downloads/mumble',
       'post-deploy' : 'npm install && pm2 reload ecosystem.config.js --env production'
     }
   }
