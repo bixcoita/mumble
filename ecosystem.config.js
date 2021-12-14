@@ -18,7 +18,7 @@ module.exports = {
     },
     {
       name: 'odaslive',
-      script: '~/odas/bin/odaslive -c ~/odas/config/odaslive/respeaker_4_mic_array.cfg',
+      script: '~/Downloads/odas/bin/odaslive -c ~/Downloads/odas/config/odaslive/respeaker_4_mic_array.cfg',
       // Options reference: https://pm2.keymetrics.io/docs/usage/application-declaration/
       args: '',
       instances: 1,
@@ -31,7 +31,7 @@ module.exports = {
   deploy : {
     production : {
       user : 'pi',
-      host : ['noise-pi'],
+      host : ['pi'],
       ref  : 'origin/master',
       repo : 'git@github.com:yurivm/mumble.git',
       path : '/home/pi/mumble',
